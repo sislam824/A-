@@ -1,0 +1,33 @@
+#home.home {
+  display: grid;
+  grid-template-columns: 18% auto;
+  // gap: 2px;
+  .sidebar {
+    height: calc(100vh - 65px);
+    background: var(--bg5);
+    padding: 10px;
+    // border: 1px solid rgb(228, 228, 228);
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: url("https://imgs.search.brave.com/rv0FZlZzhSWcv-RbMtXBpEDlGUZsA3e3yA06aJEZNII/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9w/YWludGluZy1jb25j/ZXB0LXdpdGgtY29s/b3ItcGFsZXR0ZV8y/My0yMTQ3NzgxNjA3/LmpwZz9zaXplPTYy/NiZleHQ9anBn")
+      center center;
+    background-size: fill; /* Ensures the image covers the entire container */
+    button {
+      width: 100%;
+      border: none;
+    }
+
+    .active:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .admin-content {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
